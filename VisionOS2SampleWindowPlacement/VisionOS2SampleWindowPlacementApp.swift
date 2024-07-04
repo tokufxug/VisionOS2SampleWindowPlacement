@@ -7,11 +7,20 @@
 
 import SwiftUI
 
+var isRotate = false
+
 @main
 struct VisionOS2SampleWindowPlacementApp: App {
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            PancakeWindowView()
         }
+        
+        WindowGroup(id: "control") {
+            ControlView()
+        }.defaultWindowPlacement {content, context in
+            return WindowPlacement(.utilityPanel)
+        }.defaultSize(width: 600, height: 400)
     }
 }

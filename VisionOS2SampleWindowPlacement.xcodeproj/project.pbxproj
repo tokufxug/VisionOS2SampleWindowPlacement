@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		1A63B0732C36F55E005AB354 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 1A63B0722C36F55E005AB354 /* RealityKitContent */; };
 		1A63B0752C36F55E005AB354 /* VisionOS2SampleWindowPlacementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B0742C36F55E005AB354 /* VisionOS2SampleWindowPlacementApp.swift */; };
-		1A63B0772C36F55E005AB354 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B0762C36F55E005AB354 /* ContentView.swift */; };
 		1A63B0792C36F55F005AB354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A63B0782C36F55F005AB354 /* Assets.xcassets */; };
 		1A63B07C2C36F55F005AB354 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A63B07B2C36F55F005AB354 /* Preview Assets.xcassets */; };
 		1A63B0872C36F55F005AB354 /* VisionOS2SampleWindowPlacementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B0862C36F55F005AB354 /* VisionOS2SampleWindowPlacementTests.swift */; };
+		1A63B0912C36F6F8005AB354 /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1A63B0902C36F6F8005AB354 /* pancakes.usdz */; };
+		1A63B0952C36F75B005AB354 /* PancakeWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B0942C36F75B005AB354 /* PancakeWindowView.swift */; };
+		1A63B0972C36FA11005AB354 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B0962C36FA11005AB354 /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,12 +31,14 @@
 		1A63B06D2C36F55E005AB354 /* VisionOS2SampleWindowPlacement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOS2SampleWindowPlacement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A63B0712C36F55E005AB354 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		1A63B0742C36F55E005AB354 /* VisionOS2SampleWindowPlacementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOS2SampleWindowPlacementApp.swift; sourceTree = "<group>"; };
-		1A63B0762C36F55E005AB354 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A63B0782C36F55F005AB354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A63B07B2C36F55F005AB354 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A63B07D2C36F55F005AB354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A63B0822C36F55F005AB354 /* VisionOS2SampleWindowPlacementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOS2SampleWindowPlacementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A63B0862C36F55F005AB354 /* VisionOS2SampleWindowPlacementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOS2SampleWindowPlacementTests.swift; sourceTree = "<group>"; };
+		1A63B0902C36F6F8005AB354 /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = pancakes.usdz; sourceTree = "<group>"; };
+		1A63B0942C36F75B005AB354 /* PancakeWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeWindowView.swift; sourceTree = "<group>"; };
+		1A63B0962C36FA11005AB354 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 		1A63B06F2C36F55E005AB354 /* VisionOS2SampleWindowPlacement */ = {
 			isa = PBXGroup;
 			children = (
+				1A63B0902C36F6F8005AB354 /* pancakes.usdz */,
 				1A63B0742C36F55E005AB354 /* VisionOS2SampleWindowPlacementApp.swift */,
-				1A63B0762C36F55E005AB354 /* ContentView.swift */,
+				1A63B0942C36F75B005AB354 /* PancakeWindowView.swift */,
+				1A63B0962C36FA11005AB354 /* ControlView.swift */,
 				1A63B0782C36F55F005AB354 /* Assets.xcassets */,
 				1A63B07D2C36F55F005AB354 /* Info.plist */,
 				1A63B07A2C36F55F005AB354 /* Preview Content */,
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A63B0912C36F6F8005AB354 /* pancakes.usdz in Resources */,
 				1A63B07C2C36F55F005AB354 /* Preview Assets.xcassets in Resources */,
 				1A63B0792C36F55F005AB354 /* Assets.xcassets in Resources */,
 			);
@@ -214,8 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A63B0772C36F55E005AB354 /* ContentView.swift in Sources */,
+				1A63B0972C36FA11005AB354 /* ControlView.swift in Sources */,
 				1A63B0752C36F55E005AB354 /* VisionOS2SampleWindowPlacementApp.swift in Sources */,
+				1A63B0952C36F75B005AB354 /* PancakeWindowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
